@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38A9C7B12CE98B1A003D091C /* ExpertZzz Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 38A9C7B02CE98B1A003D091C /* ExpertZzz Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38A9C7B62CE98B1A003D091C /* ExpertZzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7B52CE98B1A003D091C /* ExpertZzzApp.swift */; };
+		38A9C7B82CE98B1A003D091C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7B72CE98B1A003D091C /* ContentView.swift */; };
+		38A9C7BA2CE98B1C003D091C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A9C7B92CE98B1C003D091C /* Assets.xcassets */; };
+		38A9C7BD2CE98B1C003D091C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A9C7BC2CE98B1C003D091C /* Preview Assets.xcassets */; };
+		38A9C7C72CE98B1C003D091C /* ExpertZzz_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7C62CE98B1C003D091C /* ExpertZzz_Watch_AppTests.swift */; };
+		38A9C7D12CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7D02CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift */; };
+		38A9C7D32CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7D22CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift */; };
+		38A9C7E42CE98E09003D091C /* SessionPaggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38A9C7B22CE98B1A003D091C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38A9C7A42CE98B19003D091C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38A9C7AF2CE98B1A003D091C;
+			remoteInfo = "ExpertZzz Watch App";
+		};
+		38A9C7C32CE98B1C003D091C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38A9C7A42CE98B19003D091C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38A9C7AF2CE98B1A003D091C;
+			remoteInfo = "ExpertZzz Watch App";
+		};
+		38A9C7CD2CE98B1C003D091C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38A9C7A42CE98B19003D091C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38A9C7AF2CE98B1A003D091C;
+			remoteInfo = "ExpertZzz Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38A9C7D92CE98B1C003D091C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				38A9C7B12CE98B1A003D091C /* ExpertZzz Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		38A9C7AA2CE98B1A003D091C /* ExpertZzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpertZzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A9C7B02CE98B1A003D091C /* ExpertZzz Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExpertZzz Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A9C7B52CE98B1A003D091C /* ExpertZzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzzApp.swift; sourceTree = "<group>"; };
+		38A9C7B72CE98B1A003D091C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		38A9C7B92CE98B1C003D091C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38A9C7BC2CE98B1C003D091C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38A9C7C22CE98B1C003D091C /* ExpertZzz Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExpertZzz Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A9C7C62CE98B1C003D091C /* ExpertZzz_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzz_Watch_AppTests.swift; sourceTree = "<group>"; };
+		38A9C7CC2CE98B1C003D091C /* ExpertZzz Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExpertZzz Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A9C7D02CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzz_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		38A9C7D22CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzz_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPaggingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38A9C7AD2CE98B1A003D091C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7BF2CE98B1C003D091C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7C92CE98B1C003D091C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38A9C7A32CE98B19003D091C = {
+			isa = PBXGroup;
+			children = (
+				38A9C7B42CE98B1A003D091C /* ExpertZzz Watch App */,
+				38A9C7C52CE98B1C003D091C /* ExpertZzz Watch AppTests */,
+				38A9C7CF2CE98B1C003D091C /* ExpertZzz Watch AppUITests */,
+				38A9C7AB2CE98B1A003D091C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38A9C7AB2CE98B1A003D091C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38A9C7AA2CE98B1A003D091C /* ExpertZzz.app */,
+				38A9C7B02CE98B1A003D091C /* ExpertZzz Watch App.app */,
+				38A9C7C22CE98B1C003D091C /* ExpertZzz Watch AppTests.xctest */,
+				38A9C7CC2CE98B1C003D091C /* ExpertZzz Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38A9C7B42CE98B1A003D091C /* ExpertZzz Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				38A9C7B52CE98B1A003D091C /* ExpertZzzApp.swift */,
+				38A9C7B72CE98B1A003D091C /* ContentView.swift */,
+				38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */,
+				38A9C7B92CE98B1C003D091C /* Assets.xcassets */,
+				38A9C7BB2CE98B1C003D091C /* Preview Content */,
+			);
+			path = "ExpertZzz Watch App";
+			sourceTree = "<group>";
+		};
+		38A9C7BB2CE98B1C003D091C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				38A9C7BC2CE98B1C003D091C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38A9C7C52CE98B1C003D091C /* ExpertZzz Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				38A9C7C62CE98B1C003D091C /* ExpertZzz_Watch_AppTests.swift */,
+			);
+			path = "ExpertZzz Watch AppTests";
+			sourceTree = "<group>";
+		};
+		38A9C7CF2CE98B1C003D091C /* ExpertZzz Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38A9C7D02CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift */,
+				38A9C7D22CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "ExpertZzz Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38A9C7A92CE98B1A003D091C /* ExpertZzz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A9C7DA2CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz" */;
+			buildPhases = (
+				38A9C7A82CE98B1A003D091C /* Resources */,
+				38A9C7D92CE98B1C003D091C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38A9C7B32CE98B1A003D091C /* PBXTargetDependency */,
+			);
+			name = ExpertZzz;
+			productName = ExpertZzz;
+			productReference = 38A9C7AA2CE98B1A003D091C /* ExpertZzz.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		38A9C7AF2CE98B1A003D091C /* ExpertZzz Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A9C7D62CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch App" */;
+			buildPhases = (
+				38A9C7AC2CE98B1A003D091C /* Sources */,
+				38A9C7AD2CE98B1A003D091C /* Frameworks */,
+				38A9C7AE2CE98B1A003D091C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ExpertZzz Watch App";
+			productName = "ExpertZzz Watch App";
+			productReference = 38A9C7B02CE98B1A003D091C /* ExpertZzz Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38A9C7C12CE98B1C003D091C /* ExpertZzz Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A9C7DD2CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch AppTests" */;
+			buildPhases = (
+				38A9C7BE2CE98B1C003D091C /* Sources */,
+				38A9C7BF2CE98B1C003D091C /* Frameworks */,
+				38A9C7C02CE98B1C003D091C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38A9C7C42CE98B1C003D091C /* PBXTargetDependency */,
+			);
+			name = "ExpertZzz Watch AppTests";
+			productName = "ExpertZzz Watch AppTests";
+			productReference = 38A9C7C22CE98B1C003D091C /* ExpertZzz Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38A9C7CB2CE98B1C003D091C /* ExpertZzz Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38A9C7E02CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch AppUITests" */;
+			buildPhases = (
+				38A9C7C82CE98B1C003D091C /* Sources */,
+				38A9C7C92CE98B1C003D091C /* Frameworks */,
+				38A9C7CA2CE98B1C003D091C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38A9C7CE2CE98B1C003D091C /* PBXTargetDependency */,
+			);
+			name = "ExpertZzz Watch AppUITests";
+			productName = "ExpertZzz Watch AppUITests";
+			productReference = 38A9C7CC2CE98B1C003D091C /* ExpertZzz Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38A9C7A42CE98B19003D091C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					38A9C7A92CE98B1A003D091C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					38A9C7AF2CE98B1A003D091C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					38A9C7C12CE98B1C003D091C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 38A9C7AF2CE98B1A003D091C;
+					};
+					38A9C7CB2CE98B1C003D091C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 38A9C7AF2CE98B1A003D091C;
+					};
+				};
+			};
+			buildConfigurationList = 38A9C7A72CE98B19003D091C /* Build configuration list for PBXProject "ExpertZzz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38A9C7A32CE98B19003D091C;
+			productRefGroup = 38A9C7AB2CE98B1A003D091C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38A9C7A92CE98B1A003D091C /* ExpertZzz */,
+				38A9C7AF2CE98B1A003D091C /* ExpertZzz Watch App */,
+				38A9C7C12CE98B1C003D091C /* ExpertZzz Watch AppTests */,
+				38A9C7CB2CE98B1C003D091C /* ExpertZzz Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38A9C7A82CE98B1A003D091C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7AE2CE98B1A003D091C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9C7BD2CE98B1C003D091C /* Preview Assets.xcassets in Resources */,
+				38A9C7BA2CE98B1C003D091C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7C02CE98B1C003D091C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7CA2CE98B1C003D091C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38A9C7AC2CE98B1A003D091C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9C7B82CE98B1A003D091C /* ContentView.swift in Sources */,
+				38A9C7B62CE98B1A003D091C /* ExpertZzzApp.swift in Sources */,
+				38A9C7E42CE98E09003D091C /* SessionPaggingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7BE2CE98B1C003D091C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9C7C72CE98B1C003D091C /* ExpertZzz_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38A9C7C82CE98B1C003D091C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9C7D12CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift in Sources */,
+				38A9C7D32CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38A9C7B32CE98B1A003D091C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38A9C7AF2CE98B1A003D091C /* ExpertZzz Watch App */;
+			targetProxy = 38A9C7B22CE98B1A003D091C /* PBXContainerItemProxy */;
+		};
+		38A9C7C42CE98B1C003D091C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38A9C7AF2CE98B1A003D091C /* ExpertZzz Watch App */;
+			targetProxy = 38A9C7C32CE98B1C003D091C /* PBXContainerItemProxy */;
+		};
+		38A9C7CE2CE98B1C003D091C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38A9C7AF2CE98B1A003D091C /* ExpertZzz Watch App */;
+			targetProxy = 38A9C7CD2CE98B1C003D091C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38A9C7D42CE98B1C003D091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38A9C7D52CE98B1C003D091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		38A9C7D72CE98B1C003D091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExpertZzz Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpertZzz;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mravaloarison.ExpertZzz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		38A9C7D82CE98B1C003D091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ExpertZzz Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpertZzz;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mravaloarison.ExpertZzz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		38A9C7DB2CE98B1C003D091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpertZzz;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mravaloarison.ExpertZzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		38A9C7DC2CE98B1C003D091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				INFOPLIST_KEY_CFBundleDisplayName = ExpertZzz;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mravaloarison.ExpertZzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38A9C7DE2CE98B1C003D091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mravaloarison.ExpertZzz-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpertZzz Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ExpertZzz Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		38A9C7DF2CE98B1C003D091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mravaloarison.ExpertZzz-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpertZzz Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ExpertZzz Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		38A9C7E12CE98B1C003D091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mravaloarison.ExpertZzz-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ExpertZzz Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		38A9C7E22CE98B1C003D091C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 482SRM2C9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mravaloarison.ExpertZzz-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ExpertZzz Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38A9C7A72CE98B19003D091C /* Build configuration list for PBXProject "ExpertZzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A9C7D42CE98B1C003D091C /* Debug */,
+				38A9C7D52CE98B1C003D091C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38A9C7D62CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A9C7D72CE98B1C003D091C /* Debug */,
+				38A9C7D82CE98B1C003D091C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38A9C7DA2CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A9C7DB2CE98B1C003D091C /* Debug */,
+				38A9C7DC2CE98B1C003D091C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38A9C7DD2CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A9C7DE2CE98B1C003D091C /* Debug */,
+				38A9C7DF2CE98B1C003D091C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38A9C7E02CE98B1C003D091C /* Build configuration list for PBXNativeTarget "ExpertZzz Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38A9C7E12CE98B1C003D091C /* Debug */,
+				38A9C7E22CE98B1C003D091C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38A9C7A42CE98B19003D091C /* Project object */;
+}
