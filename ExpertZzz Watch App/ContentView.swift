@@ -23,14 +23,6 @@ struct ContentView: View {
         .onAppear() {
             ourActionManager.requestAuthorization()
         }
-        .sheet(isPresented: $showSheet, content: {
-            SummaryView()
-        })
-        .onChange(of: ourActionManager.ended) { bf, ended in
-            if ended {
-                showSheet = true
-            }
-        }
     }
 }
 

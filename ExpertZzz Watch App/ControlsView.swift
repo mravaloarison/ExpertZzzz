@@ -14,7 +14,7 @@ struct ControlsView: View {
         HStack {
             VStack {
                 Button {
-                    ourActionManager.endWork()
+                    ourActionManager.ended = true
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -31,6 +31,14 @@ struct ControlsView: View {
                 .tint(ourActionManager.isPauseActive ? Color.yellow : Color.brown)
                 .font(.title2)
                 Text(ourActionManager.isPauseActive ? "Pause" : "Resume")
+            }
+        }
+        .fullScreenCover(isPresented: $ourActionManager.ended, content: {
+            SummaryView()
+        })
+        .onChange(of: ourActionManager.ended) {
+            if ourActionManager.ended {
+                print("Session has ended")
             }
         }
     }

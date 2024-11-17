@@ -12,18 +12,28 @@ struct SessionPaggingView: View {
     @State private var selection: Tab = .metrics
     @StateObject private var actionManager = OurActionManager()
  
-    
     enum Tab {
         case controls, metrics
     }
 
     var body: some View {
-        TabView(selection: $selection) {
-            ControlsView().tag(Tab.controls)
-            MetricsView(actionManager: actionManager)
-                .tag(Tab.metrics)
+        Group {
+            if actionManager.ended {
+                SummaryView()
+            } else {
+                TabView(selection: $selection) {
+                    ControlsView().tag(Tab.controls)
+                    MetricsView(actionManager: actionManager)
+                        .tag(Tab.metrics)
+                }
+                .navigationBarBackButtonHidden()
+            }
         }
-        .navigationBarBackButtonHidden(true)
+        .onChange(of: actionManager.ended) {
+            if actionManager.ended {
+                print("Session has ended")
+            }
+        }
     }
 }
 
