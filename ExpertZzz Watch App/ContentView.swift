@@ -11,7 +11,7 @@ import HealthKit
 struct ContentView: View {
     var body: some View {
         NavigationLink (
-            "Get started",
+            "Start shift",
             destination: Text("Starting shift")
         ).padding()
     }
