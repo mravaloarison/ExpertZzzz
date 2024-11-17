@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct MetricsView: View {
+    @ObservedObject var actionManager = OurActionManager()
+
     var body: some View {
         VStack {
             ElapsedTimeView(
-                elapsedTime: 3 * 60 + 15.24,
-                showSubseconds: true
+                elapsedTime: actionManager.elapsedTime,
+                showSubseconds: false
             )
                 .foregroundStyle(Color.yellow)
                 .commonTextStyle(.title2)
-            Text(
-                153.formatted(
-                    .number.precision(.fractionLength(0))
-                )
-                + " bpm"
-            )
-            .commonTextStyle(.title)
+            if let heartRate = actionManager.currentHeartRate {
+                Text("\(Int(heartRate)) bpm")
+                    .commonTextStyle(.title)
+            }
         }
         .scenePadding()
+        .onAppear {
+            actionManager.startHeartRateQuery()
+        }
     }
 }
 
@@ -39,5 +41,5 @@ extension View {
 }
 
 #Preview {
-    MetricsView()
+    MetricsView(actionManager: OurActionManager())
 }

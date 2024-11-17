@@ -39,12 +39,6 @@ class ElapsedTimeFormatter: Formatter {
             return nil
         }
 
-        if showSubseconds {
-            let hundredths = Int((time.truncatingRemainder(dividingBy: 1)) * 100)
-            let decimalSeparator = Locale.current.decimalSeparator ?? "."
-            return String(format: "%@%@%0.2d", formattedString, decimalSeparator, hundredths)
-        }
-
         return formattedString
     }
 }

@@ -9,11 +9,28 @@ import SwiftUI
 import HealthKit
 
 struct ContentView: View {
+    @StateObject var ourActionManager = OurActionManager()
+    @State private var showSheet = false
+    
     var body: some View {
-        NavigationLink (
-            "Start shift",
-            destination: Text("Starting shift")
-        ).padding()
+        List {
+            NavigationLink (
+                "Start shift",
+                destination: SessionPaggingView()
+            )
+            .padding()
+        }
+        .onAppear() {
+            ourActionManager.requestAuthorization()
+        }
+        .sheet(isPresented: $showSheet, content: {
+            SummaryView()
+        })
+        .onChange(of: ourActionManager.ended) { bf, ended in
+            if ended {
+                showSheet = true
+            }
+        }
     }
 }
 

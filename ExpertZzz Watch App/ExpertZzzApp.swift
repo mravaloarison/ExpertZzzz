@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct ExpertZzz_Watch_AppApp: App {
+    @StateObject var ourActionManager = OurActionManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .environmentObject(ourActionManager)
         }
     }
 }

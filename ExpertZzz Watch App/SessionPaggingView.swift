@@ -10,6 +10,8 @@ import WatchKit
 
 struct SessionPaggingView: View {
     @State private var selection: Tab = .metrics
+    @StateObject private var actionManager = OurActionManager()
+ 
     
     enum Tab {
         case controls, metrics
@@ -18,8 +20,10 @@ struct SessionPaggingView: View {
     var body: some View {
         TabView(selection: $selection) {
             ControlsView().tag(Tab.controls)
-            MetricsView().tag(Tab.metrics)
+            MetricsView(actionManager: actionManager)
+                .tag(Tab.metrics)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

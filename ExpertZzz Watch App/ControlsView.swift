@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ControlsView: View {
+    @StateObject var ourActionManager = OurActionManager()
+
     var body: some View {
         HStack {
             VStack {
                 Button {
+                    ourActionManager.endWork()
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -21,12 +24,13 @@ struct ControlsView: View {
             }
             VStack {
                 Button {
+                    ourActionManager.togglePause()
                 } label: {
-                    Image(systemName: "pause")
+                    Image(systemName: ourActionManager.isPauseActive ? "pause" : "play")
                 }
-                .tint(Color.yellow)
+                .tint(ourActionManager.isPauseActive ? Color.yellow : Color.brown)
                 .font(.title2)
-                Text("Pause")
+                Text(ourActionManager.isPauseActive ? "Pause" : "Resume")
             }
         }
     }
