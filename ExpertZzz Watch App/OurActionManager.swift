@@ -16,8 +16,12 @@ class OurActionManager: NSObject, ObservableObject {
     @Published var running: Bool = false
     @Published var ended: Bool = false
     
+    @Published var totalWorkTime: Double = 0.0
+    @Published var totalBreakTime: Double = 0.0
+    
     @Published var elapsedTime: Double = 0.0
     private var timer: Timer?
+    private var breakTimer: Timer?
 
     func requestAuthorization() {
         guard HKHealthStore.isHealthDataAvailable() else { return }
@@ -67,10 +71,12 @@ class OurActionManager: NSObject, ObservableObject {
     
     func pause() {
         isPauseActive = true
+        startBreakTimer()
     }
 
     func resume() {
         isPauseActive = false
+        stopBreakTimer()
     }
 
     func togglePause() {
@@ -85,17 +91,33 @@ class OurActionManager: NSObject, ObservableObject {
         ended = true
         print("Work must end")
     }
-    
+
     private func startTimer() {
         running = true
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             self?.elapsedTime += 1.0
+            self?.calculateWorkTime()
         }
     }
     
     private func stopTimer() {
         running = false
         timer?.invalidate()
+    }
+    
+    private func startBreakTimer() {
+        breakTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.totalBreakTime += 1.0
+            self?.calculateWorkTime()
+        }
+    }
+
+    private func stopBreakTimer() {
+        breakTimer?.invalidate()
+    }
+
+    private func calculateWorkTime() {
+        totalWorkTime = elapsedTime - totalBreakTime
     }
     
     @Published var heartRateDataReturned = [108, 105, 110, 112, 109, 115, 111, 117, 108, 112, 105, 120, 101, 93, 85, 80, 73, 65, 63, 67, 65, 62, 66, 63]
