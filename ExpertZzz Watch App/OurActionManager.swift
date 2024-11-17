@@ -97,4 +97,39 @@ class OurActionManager: NSObject, ObservableObject {
         running = false
         timer?.invalidate()
     }
+    
+    @Published var heartRateDataReturned = [108, 105, 110, 112, 109, 115, 111, 117, 108, 112, 105, 120, 101, 93, 85, 80, 73, 65, 63, 67, 65, 62, 66, 63]
+    
+    private var heartRateTimer: Timer?
+    private var currentIndex = 0
+    
+    func startHeartRateQuery2() {
+        if !running {
+            startTimer()
+        }
+        startHeartRateSimulation()
+    }
+
+    func startHeartRateSimulation() {
+        if currentIndex < heartRateDataReturned.count {
+            currentHeartRate = Double(heartRateDataReturned[currentIndex])
+            currentIndex += 1
+        }
+
+        heartRateTimer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            if self.currentIndex < self.heartRateDataReturned.count {
+                self.currentHeartRate = Double(self.heartRateDataReturned[self.currentIndex])
+                self.currentIndex += 1
+            } else {
+                self.currentIndex = 0
+            }
+        }
+    }
+
+
+    func stopHeartRateSimulation() {
+        heartRateTimer?.invalidate()
+        heartRateTimer = nil
+    }
 }

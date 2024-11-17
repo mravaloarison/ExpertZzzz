@@ -25,7 +25,7 @@ struct MetricsView: View {
         }
         .scenePadding()
         .onAppear {
-            actionManager.startHeartRateQuery()
+            actionManager.startHeartRateQuery2()
         }
     }
 }
