@@ -6,18 +6,19 @@
 //
 
 import SwiftUI
+import WatchKit
 
 struct SessionPaggingView: View {
     @State private var selection: Tab = .metrics
     
     enum Tab {
-        case constrols, metrics
+        case controls, metrics
     }
 
     var body: some View {
         TabView(selection: $selection) {
-            Text("Controls").tag(Tab.constrols)
-            Text("Metrics").tag(Tab.metrics)
+            ControlsView().tag(Tab.controls)
+            MetricsView().tag(Tab.metrics)
         }
     }
 }
