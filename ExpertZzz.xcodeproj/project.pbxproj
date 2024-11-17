@@ -16,6 +16,8 @@
 		38A9C7D12CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7D02CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift */; };
 		38A9C7D32CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7D22CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift */; };
 		38A9C7E42CE98E09003D091C /* SessionPaggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */; };
+		38A9C7E62CE98F79003D091C /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7E52CE98F79003D091C /* MetricsView.swift */; };
+		38A9C7E82CE98F8C003D091C /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A9C7E72CE98F8C003D091C /* ControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		38A9C7D02CE98B1C003D091C /* ExpertZzz_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzz_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		38A9C7D22CE98B1C003D091C /* ExpertZzz_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertZzz_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPaggingView.swift; sourceTree = "<group>"; };
+		38A9C7E52CE98F79003D091C /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		38A9C7E72CE98F8C003D091C /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				38A9C7B52CE98B1A003D091C /* ExpertZzzApp.swift */,
 				38A9C7B72CE98B1A003D091C /* ContentView.swift */,
 				38A9C7E32CE98E09003D091C /* SessionPaggingView.swift */,
+				38A9C7E52CE98F79003D091C /* MetricsView.swift */,
+				38A9C7E72CE98F8C003D091C /* ControlsView.swift */,
 				38A9C7B92CE98B1C003D091C /* Assets.xcassets */,
 				38A9C7BB2CE98B1C003D091C /* Preview Content */,
 			);
@@ -314,6 +320,8 @@
 			files = (
 				38A9C7B82CE98B1A003D091C /* ContentView.swift in Sources */,
 				38A9C7B62CE98B1A003D091C /* ExpertZzzApp.swift in Sources */,
+				38A9C7E62CE98F79003D091C /* MetricsView.swift in Sources */,
+				38A9C7E82CE98F8C003D091C /* ControlsView.swift in Sources */,
 				38A9C7E42CE98E09003D091C /* SessionPaggingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
