@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct SessionPaggingView: View {
+    @State private var selection: Tab = .metrics
+    
+    enum Tab {
+        case constrols, metrics
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $selection) {
+            Text("Controls").tag(Tab.constrols)
+            Text("Metrics").tag(Tab.metrics)
+        }
     }
 }
 
